@@ -52,8 +52,8 @@ $sqlQuery = "SELECT id, comment, created FROM
 ". $this->db_table ." WHERE id = ".$this->id;
 $record = $this->db->query($sqlQuery);
 $dataRow=$record->fetch_assoc();
-//$this->author = $dataRow['author'];
-//$this->email = $dataRow['email'];
+
+
 $this->comment = $dataRow['comment'];
 $this->created = $dataRow['created'];
 }
